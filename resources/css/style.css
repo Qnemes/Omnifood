@@ -10,7 +10,6 @@ html, body {
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
-    scroll-behavior: smooth;
     overflow-x: hidden;
 }
 .clearfix {
@@ -457,4 +456,19 @@ footer p {
     color: #888;
     text-align: center;
     margin-top: 1rem;
+}
+/* Animations */
+.js-waypoint-1, .js-waypoint-2, .js-waypoint-3 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+.js-waypoint-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+.js-waypoint-1.animated, 
+.js-waypoint-2.animated, 
+.js-waypoint-3.animated {
+    opacity: 1;
 }
