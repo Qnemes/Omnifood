@@ -4,102 +4,80 @@
         width: 100%;
         padding: 0 2%;
     }
-    .row {
-        padding: 0 2%;
-    }
+    .row { padding: 0 2%; }
 }
 /* Tablets from 768px to 1023 px */
 @media only screen and (max-width: 1023px) {
-    body {
-        font-size: .9rem;
-    }
-    section {
-        padding: 3em 0;
-    }
+    body { font-size: .9rem; }
+    section { padding: 3em 0; }
     .long-copy {
         width: 85%;
         margin-left: 7.5%;
     }
      /* How it works section */
-    .steps-box {
-        margin-top: .5rem;
-    }
-    .steps-box:last-child {
-        margin-top: .5rem;
-    }
-    .work-steps {
-        margin-bottom: 2rem;
-    }
-    .work-steps:last-of-type {
-        margin-bottom: 3rem;
-    }
-    .app-screen {
-        width: 50%;
-    }
+    .steps-box { margin-top: .5rem; }
+    .steps-box:last-child { margin-top: .5rem; }
+    .work-steps { margin-bottom: 2rem; }
+    .work-steps:last-of-type { margin-bottom: 3rem; }
+    .app-screen { width: 50%; }
     .icon-small {
         width: .8rem;
         margin-right: .25rem;
     }
-    .city-feature {
-        font-size: .9rem;
-    }
+    .city-feature { font-size: .9rem; }
     .plan-box {
         width: 100%;
         margin-left: 0;
     }
-    .plan-price {
-        font-size: 2.5rem;
-    }
-    .contact-form {
-        width: 80%;
-    }
+    .plan-price { font-size: 2.5rem; }
+    .contact-form { width: 80%; }
 }
 /* Phones/tablets: from 481px to 767px */
 @media only screen and (max-width: 767px) {
-    body {
-        font-size: .8rem;
-    }
-    section {
-        padding: 1.5rem 0;
-    }
+    body { font-size: .8rem; }
+    section { padding: 1.5rem 0; }
     .plan-box {
         width: 70%;
         margin-left: 15%;
         text-align: center;
     }
-    .plan-box .btn, .contact-form input[type=submit] {
-        margin-right: 0;
-    }
-    .section-features h3 {
-        text-align: center;
-    }
-    .row, .hero-text-box {
-        padding: 0 4%;
-    }
+    .plan-box .btn, .contact-form input[type=submit] { margin-right: 0; }
+    .section-features h3 { text-align: center; }
+    .row, .hero-text-box { padding: 0 4%; }
     .col {
         width: 100%;
         margin: 0 0 4% 0;
     }
+    .main-nav { display: none; }
+    .mobile-nav-icon { display: inline-block; }
     .main-nav {
-        display: none;
+        float: left;
+        margin-top: 1.5rem;
+        margin-left: 1.25rem;
     }
-    h1 {
-        font-size: 1.8rem;
+    .main-nav li { display: block; }
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 1rem;
     }
-    h2 {
-        font-size: 1.5rem;
-    }
+    .sticky .main-nav { margin-top: .5rem; }
+    .sticky .main-nav li a:link, .sticky .main-nav li a:visited { padding: .5rem 0; }  
+    .sticky .mobile-nav-icon { margin-top: .5rem; }  
+    .sticky .mobile-nav-icon i { color: #555; }
+
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.5rem; }
+
     .long-copy {
         width: 100%;
         margin-left: 0%;
     }
     /* How it works section */
-    .steps-box:first-child {
-        text-align: center;
-    }
-    .app-screen {
-        width: 30%;
-    }
+    .steps-box:first-child { text-align: center; }
+    .app-screen { width: 30%; }
     .works-step div {
         height: 2rem;
         width: 2rem;
@@ -112,20 +90,12 @@
         margin-bottom: 1rem;
         font-size: 1.2rem; 
     }
-    .works-step:last-of-type {
-        margin-bottom: 1rem;
-    }
+    .works-step:last-of-type { margin-bottom: 1rem; }
     /* Section cities */
-    .section-cities .box {
-        text-align: center;
-    }
+    .section-cities .box { text-align: center; }
 }
 /* Small phones: from 0px to 480px */
 @media only screen and (max-width: 480px) {
-    section {
-        padding: 1.25rem 0;
-    }
-    .contact-form {
-        width: 100%;
-    }
+    section { padding: 1.25rem 0; }
+    .contact-form { width: 100%; }
 }

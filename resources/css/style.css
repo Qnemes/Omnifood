@@ -1,3 +1,4 @@
+/* Main settings */
 * {
     margin: 0;
     padding: 0;
@@ -12,9 +13,7 @@ html, body {
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
 }
-.clearfix {
-    zoom: 1;
-}
+.clearfix { zoom: 1; }
 .clearfix:after {
     content: '';
     clear: both;
@@ -26,13 +25,10 @@ html, body {
     max-width: 1140px;
     margin: 0 auto;
 }
-section {
-    padding: 4rem 0;
-}
-.box {
-    padding: 1%;
-}
+section { padding: 4rem 0; }
+.box { padding: 1%; }
 
+/* Header section */
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url(img/hero.jpg);
     background-size: cover;
@@ -84,7 +80,18 @@ header {
 .main-nav li a:hover, .main-nav li a:active {
     border-bottom: 2px solid rgb(246, 127, 30);
 }
-/* Sticky navigation */
+/* Mobile navigation hamburger menu */ 
+.mobile-nav-icon {
+    float: right;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.mobile-nav-icon i {
+    font-size: 2rem;
+    color: #FDFFFC;
+}
+/* Sticky navigation bar*/
 .sticky {
     position: fixed;
     top: 0;
@@ -98,15 +105,9 @@ header {
     padding: .8rem 0;
     color: #555;   
 }
-.sticky .logo-black {
-    display: block;
-}
-.sticky .logo {
-    display: none;
-}
-.sticky .main-nav {
-    margin-top: .9rem;
-}
+.sticky .logo-black { display: block; }
+.sticky .logo { display: none; }
+.sticky .main-nav { margin-top: .9rem; }
 
 h1, h2, h3 {
     font-weight: 300;
@@ -210,13 +211,9 @@ a:hover, a:active {
     border: 1px solid rgb(210, 102, 24);
     color: #FDFFFC;
 }
-.section-features .long-copy {
-    margin-bottom: 1.5rem;
-}
+.section-features .long-copy { margin-bottom: 1.5rem; }
 /* Section with food images */
-.section-meals {
-    padding: 0;
-}
+.section-meals { padding: 0; }
 .meals-showcase {
     list-style: none;
     width: 100%;
@@ -249,9 +246,7 @@ a:hover, a:active {
     -webkit-transform: scale(1.04);
 }
 /* How it works section */
-.section-steps {
-    background-color: #f4f4f4;
-}
+.section-steps { background-color: #f4f4f4; }
 .steps-box:first-child {
     text-align: right;
     padding-right: 3%;
@@ -261,15 +256,9 @@ a:hover, a:active {
     padding-left: 3%;
     margin-top: 3.5rem;
 }
-.app-screen {
-    width: 40%;
-}
-.works-step {
-    margin-bottom: 2.5rem;
-}
-.works-step:last-of-type {
-    margin-bottom: 4rem;
-}
+.app-screen { width: 40%; }
+.works-step { margin-bottom: 2.5rem; }
+.works-step:last-of-type { margin-bottom: 4rem; }
 .works-step div {
     color: rgb(210, 102, 24);
     border: 2px solid rgb(210, 102, 24);
@@ -283,9 +272,7 @@ a:hover, a:active {
     font-size: 1.5rem;    
     margin-right: 1.25rem;
 }
-.btn-app:link, .btn-app:visited {
-    border: 0;
-}
+.btn-app:link, .btn-app:visited { border: 0; }
 .btn-app img {
     width: auto;
     height: 2.5rem;
@@ -298,9 +285,7 @@ a:hover, a:active {
     margin-bottom: .75rem;
     border-radius: 10%;
 }
-.city-feature {
-    margin-bottom: .25rem;
-}
+.city-feature { margin-bottom: .25rem; }
 /* Testimonials section */
 .section-testimonials {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
@@ -350,12 +335,8 @@ a:hover, a:active {
     padding: .75rem;
     border-bottom: 1px solid #e8e8e8;
 }
-.plan-box ul {
-    list-style: none;
-}
-.plan-box ul li {
-    padding: 5px 0;
-}
+.plan-box ul { list-style: none; }
+.plan-box ul li { padding: 5px 0; }
 .plan-box div:first-child {
     background-color: #fcfcfc;
     border-top-left-radius: 5px;
@@ -375,9 +356,7 @@ a:hover, a:active {
     font-size: .3em;
     font-weight: 300;
 } 
-.plan-price-meal {
-    font-size: .8rem;
-}
+.plan-price-meal { font-size: .8rem; }
 /* Form section */
 .contact-form {
     width: 60%;
@@ -389,18 +368,12 @@ a:hover, a:active {
     border-radius: 3px;
     border: 1px solid #ccc;
 }
-.contact-form textarea {
-    height: 5rem;
-}
-.contact-form input[type=submit] {
-    cursor: pointer;
-}
+.contact-form textarea { height: 5rem; }
+.contact-form input[type=submit] { cursor: pointer; }
 .contact-form input[type=checkbox] {
     margin: .5rem .25rem .5rem 0;
 }
-*:focus {
-    outline: none;
-}
+*:focus { outline: none; }
 /* Footer section */
 footer {
     background-color: #333;
@@ -469,6 +442,4 @@ footer p {
 }
 .js-waypoint-1.animated, 
 .js-waypoint-2.animated, 
-.js-waypoint-3.animated {
-    opacity: 1;
-}
+.js-waypoint-3.animated { opacity: 1; }
