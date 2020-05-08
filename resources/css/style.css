@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-html {
+html, body {
     background-color: white;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
@@ -11,6 +11,7 @@ html {
     font-weight: 300;
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 .clearfix {
     zoom: 1;
@@ -54,6 +55,14 @@ header {
     float: left;
     margin-top: 1rem;
 }
+.logo-black {
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: .25rem 0;
+}
+/* Main navigation */
 .main-nav {
    float: right; 
    list-style: none;
@@ -71,10 +80,33 @@ header {
     font-size: .9rem;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.2s;
-
+    -webkit-transition: border-bottom 0.2s;
 }
 .main-nav li a:hover, .main-nav li a:active {
     border-bottom: 2px solid rgb(246, 127, 30);
+}
+/* Sticky navigation */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(253, 255, 252, 0.97);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 4444;
+}
+.sticky .main-nav li a:link, .sticky .main-nav li a:visited {
+    padding: .8rem 0;
+    color: #555;   
+}
+.sticky .logo-black {
+    display: block;
+}
+.sticky .logo {
+    display: none;
+}
+.sticky .main-nav {
+    margin-top: .9rem;
 }
 
 h1, h2, h3 {
@@ -206,11 +238,16 @@ a:hover, a:active {
     width: 100%;
     height: auto;
     transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
     transition: transform .75s, opacity .75s;
+    -webkit-transition: -webkit-transform .75s, opacity .75s;
 }
 .meal-photo img:hover {
     opacity: 1;
     transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -webkit-transform: scale(1.04);
 }
 /* How it works section */
 .section-steps {
@@ -242,7 +279,7 @@ a:hover, a:active {
     height: 2.75rem;
     width: 2.75rem;
     text-align: center;
-    padding: 5px;
+    padding: 6px;
     float: left;
     font-size: 1.5rem;    
     margin-right: 1.25rem;
